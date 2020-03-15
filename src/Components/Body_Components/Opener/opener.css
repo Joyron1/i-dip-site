@@ -1,0 +1,12 @@
+/* Mobile css */
+@media screen and (max-width: 450px){
+    #computer{
+        display: none;
+    }
+
+    #mobile{
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+}

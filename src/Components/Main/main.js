@@ -19,7 +19,7 @@ class Main extends Component {
         return (
             <div className="container">
                 <div>
-                    <Route path="/" exact component={Home} />
+                    <Route path="/i-dip" exact component={Home} />
                     <Route path="/privacypolicy" exact component={PrivacyPolicy} />
                 </div>
             </div>

@@ -24,41 +24,63 @@ class Home extends Component {
 
     render() {
 
-        let TopText = <Opener OpenApp={this.OpenApp}> </Opener>;
-        let BodyColumns = <BodyCol> </BodyCol>;
-        let Propri = <Proprietary></Proprietary>;
-        let PrivacyText = <Privacy OpenApp={this.OpenApp}></Privacy>;
-        let Users = <BotUsers></BotUsers>;
-
         return (
 
+            <div>
+                <div id="computer">
+                    <div className="container">
+                        <img src={Background1} style={{ zIndex: "-1", position: "absolute", top: "-100px", right: "70px", width: "570px" }} />
 
-            <div className="container">
-                <img src={Background1} style={{ zIndex: "-1", position: "absolute", top: "0px", right: "70px", width: "600px" }} />
+                        {/* Opener */}
+                        <Opener OpenApp={this.OpenApp}> </Opener>
 
-                {/* Opener */}
-                {TopText}
+                        {/* Three columns on Body */}
+                        <BodyCol> </BodyCol>
 
-                {/* Three columns on Body */}
-                {BodyColumns}
+                        {/*  Proprietary  */}
+                        <Proprietary></Proprietary>
 
-                {/*  Proprietary  */}
-                {Propri}
+                        {/* Privacy */}
+                        <Privacy OpenApp={this.OpenApp}></Privacy>
 
-                {/* Privacy */}
-                {PrivacyText}
+                        {/* Bottom Users */}
+                        <BotUsers></BotUsers>
 
-                {/* Bottom Users */}
-                {Users}
+                        {/* Privacy Policy */}
+                        <Link to="/privacypolicy"><div className="row justify-content-center" style={{ marginTop: "140px" }}>
+                            <h5>Privacy Policy</h5>
+                        </div></Link>
 
-                {/* Privacy Policy */}
-                <Link to="/privacypolicy"><div className="row justify-content-center mt-5">
-                    <h4>Privacy Policy</h4>
-                </div></Link>
+                        <img src={Background2} style={{ zIndex: "-1", position: "absolute", top: "1050px", left: "70px", width: "550px" }} />
+                    </div >
+                </div>
 
 
-                <img src={Background2} style={{ zIndex: "-1", position: "absolute", top: "1235px", left: "70px", width: "600px", height: "1500px" }} />
-            </div >
+                <div id="mobile">
+                    <div className="container">
+
+                        {/* Opener */}
+                        <Opener OpenApp={this.OpenApp}> </Opener>
+
+                        {/* Privacy */}
+                        <Privacy OpenApp={this.OpenApp}></Privacy>
+
+                        {/*  Proprietary  */}
+                        <Proprietary></Proprietary>
+
+                        {/* Bottom Users */}
+                        <BotUsers></BotUsers>
+
+                        {/* Privacy Policy */}
+                        <Link to="/privacypolicy"><div className="row justify-content-center mt-5">
+                            <h5>Privacy Policy</h5>
+                        </div></Link>
+
+                    </div >
+                </div>
+            </div>
+
+
 
         )
     }

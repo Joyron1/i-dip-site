@@ -1,0 +1,6 @@
+/* Mobile css */
+@media screen and (max-width: 450px){
+    .privacyImg{
+        display: none;
+    }
+}
